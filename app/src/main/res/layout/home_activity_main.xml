@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/header"
+        android:src="@drawable/hinhanh2">
+
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/uudai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeDathang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageDatHang"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/maybayone" />
+
+                    <TextView
+                        android:id="@+id/txtDatHang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageDatHang"
+                        android:layout_marginLeft="20dp"
+                        android:text="Đặt hàng"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeCoupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/relativeDathang"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageCoupon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/iconvisa" />
+
+                    <TextView
+                        android:id="@+id/txtCoupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageCoupon"
+                        android:layout_marginLeft="35dp"
+                        android:text="Visa"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            //Text Uu dai dac biet
+
+            <RelativeLayout
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uudai"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tin Tức HOT"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            //List uu dai dac biet nam ngang
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uudai"
+                android:layout_marginTop="50dp"
+                android:background="#808080">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/singleDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh1"/>
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="110dp"
+                            android:gravity="center"
+                            android:text="Dịch vụ đặt vé máy bay trong nước và quốc tế nhân dịch tết đến xuân về ..."
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_chitiet_306"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi Tiết"
+                            android:textColor="#FFA500" />>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pickUp"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="220dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh3" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center"
+                            android:text="Đăt vé bay uy tín chất lượng tại app..."
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi Tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/hoanTien"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="440dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh1" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:text="Dịch vụ đặt vé máy bay trong nước và quốc tế nhân dịch tết đến xuân về ..."
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi Tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+            //Text Cap nhat tu Nha
+
+            //List cap nhat tu nha nam ngang
+
+            <RelativeLayout
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontalList"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuyến Bay Mùa Dịch"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalList1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="20dp"
+                android:background="#808080">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/a"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh4" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center"
+                            android:text="Mua lẻ giá sĩ trong mùa dịch covid này... nhận ưu đãi ngay"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi Tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/b"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="220dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh5" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:text="Đén với Nam Á Châu để cảm nhận sụ khác biệt"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi Tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/c"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="440dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh6" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center"
+                            android:text="Cứ Bay là Thích ngay!!"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+            //Test 3
+            <RelativeLayout
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontalList1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ưu Đãi Vé Máy Bay"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:id="@+id/horizontalList3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_marginTop="20dp"
+                android:background="#808080">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/a2"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh1" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:text="Ưu đãi ngay nhận quà liền tay"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi Tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/b2"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="220dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh2" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:text="ưu đãi đến từ nhiều hãng máy bay"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi Tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/c2"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="440dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/hinhanh3" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:text="Nhận quà ưu đãi lơn tại App"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="220dp"
+                            android:background="@drawable/button"
+                            android:text="Chi tiết"
+                            android:textColor="#FFA500" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
